@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="assets/logo.ico">
+    <title>Neuer Tab</title>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="logo">
+            <img src="assets/logo.png" height="82px" width="82px">
+            <h1 id="welcome">Willkommen Henry</h1>
+        </div>
+        <br>
+        <div class="datum">
+            <p id="displayDateTime"></p>
+        </div>
+    </div>
+    <br>
+    <div class="suche">
+        <img class="searchengine" src="assets/google.png" width="30px" height="30px">
+        <div class="trenner"></div>
+        <input type="search" class="search" id="textbox" name="suche" placeholder="Suchbegriff oder Adresse eingeben" onkeydown="search()">
+
+
+    </div>
+
+    <div class="content">
+        <div class="vplan">
+            <iframe src="https://www.musterschule.de/UNTIS/Vertretungsplan/show.php?plan=H_Schueler_heute" height="500px" width="50%" id="vplan"></iframe>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</div> 
+    
+</body>
+</html>
